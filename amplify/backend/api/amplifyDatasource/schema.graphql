@@ -1,0 +1,6 @@
+type Apartment @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  alias: String
+  address: String
+  area: Float
+}
