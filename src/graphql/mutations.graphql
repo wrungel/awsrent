@@ -1,0 +1,49 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateApartment(
+  $input: CreateApartmentInput!
+  $condition: ModelApartmentConditionInput
+) {
+  createApartment(input: $input, condition: $condition) {
+    id
+    alias
+    address
+    area
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateApartment(
+  $input: UpdateApartmentInput!
+  $condition: ModelApartmentConditionInput
+) {
+  updateApartment(input: $input, condition: $condition) {
+    id
+    alias
+    address
+    area
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteApartment(
+  $input: DeleteApartmentInput!
+  $condition: ModelApartmentConditionInput
+) {
+  deleteApartment(input: $input, condition: $condition) {
+    id
+    alias
+    address
+    area
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}

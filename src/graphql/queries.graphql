@@ -1,0 +1,62 @@
+# this is an auto generated file. This will be overwritten
+query GetApartment($id: ID!) {
+  getApartment(id: $id) {
+    id
+    alias
+    address
+    area
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListApartments(
+  $filter: ModelApartmentFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listApartments(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      alias
+      address
+      area
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncApartments(
+  $filter: ModelApartmentFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncApartments(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      alias
+      address
+      area
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
